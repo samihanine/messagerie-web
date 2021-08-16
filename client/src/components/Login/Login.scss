@@ -1,0 +1,83 @@
+$blue: #1bb4da;
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+
+    &__content {
+        background-color: rgba(255, 255, 255, 0.952);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+
+        h1 {
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 28px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+    
+            label {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                cursor: pointer;
+
+                p {
+                    margin: 5px;
+                    width: 100%;
+                }
+
+                & > div {
+                    display: flex;
+                    width: 100%;
+                }
+    
+                svg {
+                    font-size: 22px;
+                    margin-left: 10px;
+                }
+
+                input {
+                    width: calc(100% - 6px);
+                    padding: 3px;
+                }
+            }
+            
+
+            &>input {
+                background-color: antiquewhite;
+
+                padding: 8px;
+                border: solid 1px grey;
+
+                border-radius: 10px;
+                margin: 15px;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            
+
+        }
+
+
+    }
+
+
+}
+
+.error {
+    color: red;
+    margin: 10px 0;
+    text-align: center;
+}
